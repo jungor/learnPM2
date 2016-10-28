@@ -18,7 +18,7 @@
       host : "192.168.79.128",
       ref  : "origin/master",
       repo : "git@github.com:jungor/learnPM2.git",
-      path : "/var/www/LearnKoa/production",
+      path : "~/www/LearnKoa/production",
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
     },
     dev : {
@@ -26,7 +26,7 @@
       host : "192.168.79.128",
       ref  : "origin/master",
       repo : "git@github.com:jungor/learnPM2.git",
-      path : "/var/www/LearnKoa/development",
+      path : "~/www/LearnKoa/development",
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env dev",
       env  : {
         NODE_ENV: "dev"
